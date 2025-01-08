@@ -18,8 +18,8 @@ const UserTransaction = ({transaction}) => {
       const response = await fetch(`${baseUrl}/api/transaction/${transaction._id}`,{
         method: "DELETE",
         headers:{
-          "Authorization": `Bearer ${await user.token}`
-          // 'Authorization': `Bearer ${localStorage.getItem('customer', user.token)}`
+          "Authorization": `Bearer ${await user.token}`,
+          "Access-Control-Allow-Origin": "*"
         }
       })
       const data = await response.json()

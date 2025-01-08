@@ -25,7 +25,8 @@ const Transfer = () => {
       headers:{
         Accept: "application/form-data",
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${await user.token}`
+        "Authorization": `Bearer ${await user.token}`,
+        "Access-Control-Allow-Origin": "*"
       },
       body: JSON.stringify(tran)
     })

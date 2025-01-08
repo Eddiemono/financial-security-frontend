@@ -19,7 +19,8 @@ const AdminGetAllTrans = () => {
       }
       const response = await fetch(`${baseUrl}/api/admin/get-trans`, {
         headers:{
-          "Authorization": `Bearer ${await user.token}`
+          "Authorization": `Bearer ${await user.token}`,
+          "Access-Control-Allow-Origin": "*"
         },
       })
       const data = await response.json()

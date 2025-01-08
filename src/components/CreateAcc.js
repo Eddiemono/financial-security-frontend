@@ -37,7 +37,8 @@ const CreateAcc = () => {
             headers:{
               accept: 'application/form-data',
               'Content-Type': 'application/json',
-              'Authorization': `Bearer ${user.token}`
+              'Authorization': `Bearer ${user.token}`,
+              "Access-Control-Allow-Origin": "*"
             },
             body: JSON.stringify(formData),
           }).then((response) => response.json())

@@ -15,7 +15,8 @@ const AdminGetAccounts = () => {
       }
       const response = await fetch(`${baseUrl}/api/admin/get-acc`,{
         headers:{
-          "Authorization": `bearer ${await user.token}`
+          "Authorization": `bearer ${await user.token}`,
+          "Access-Control-Allow-Origin": "*"
         }
       })
       const data = await response.json()
