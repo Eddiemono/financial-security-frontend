@@ -36,8 +36,8 @@ const Navbar = () => {
         <h3>{user.user.email || user.user.holderName}</h3>
       </div>)} */}
       <div className='mid-container'>
-        <Link to={'/'}>About</Link>
-        <Link to={'/'}>Investment</Link>
+        <Link to={'/'}>Home</Link>
+        <Link to={'/'}>About Us</Link>
         <Link to={'/'}>Contact</Link>
 
         {/* {user && (<div>

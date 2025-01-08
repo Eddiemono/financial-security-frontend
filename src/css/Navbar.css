@@ -157,5 +157,12 @@ header .nav-btn{
     justify-content: center;
     align-items: center;
     gap: 5px;
+    color: rgb(11, 11, 239);
+  }
+
+  .mid-container a{
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(137, 30, 30);
   }
 }
