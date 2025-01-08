@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>)} */}
       <div className='mid-container'>
         <Link to={'/'}>Home</Link>
-        <Link to={'/'}>About Us</Link>
+        <Link to={'/'}>About</Link>
         <Link to={'/'}>Contact</Link>
 
         {/* {user && (<div>
