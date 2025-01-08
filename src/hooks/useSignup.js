@@ -16,6 +16,7 @@ const useSignup = () => {
     headers:{
       Accept: "application/form-data",
       "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*"
     },
     body: JSON.stringify(formdata)
   })
