@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root{
+  --primary: #1aac83;
+  --error: #e7195a
+} 
+
+body{
+  background: #f1f1f1;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* .header{
+  background: #fff;
+}
+
+.header .container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header a{
+  color: #333;
+  text-decoration: none;
+}
+
+.header nav div{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+@media(max-width: 1200px){
+  .header{
+    background: hsl(0, 16%, 96%);
+    width: 100%;
+  }
+  
+  .header .container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .container h1{
+    font-size: 20px;
+  }
+  
+  .header a{
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .pages{
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+  .header nav div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+  }
+} */

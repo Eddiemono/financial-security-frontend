@@ -1,0 +1,65 @@
+.deposit{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.deposit_container input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.deposit_container button{
+  width: 50%;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  outline: none;
+  background: rgb(8, 86, 8);
+  color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media(max-width: 1200px){
+  .deposit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .deposit_container input{
+    width: 90%;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    outline: none;
+    padding-left: 5px;
+  }
+
+  .deposit_container button{
+    width: 50%;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    outline: none;
+    background: rgb(8, 86, 8);
+    color: aliceblue;
+    font-weight: bold;
+  }
+}

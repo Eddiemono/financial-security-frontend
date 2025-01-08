@@ -1,0 +1,25 @@
+.transactions{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.transaction_items{
+  border: 2px solid black;
+}
+
+@media(max-width: 1200px){
+  .transactions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .transaction_items{
+    border: 2px solid black;
+  }
+}
