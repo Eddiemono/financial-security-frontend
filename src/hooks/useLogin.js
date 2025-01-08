@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useAuthContext } from "./useAuthContext"
+import { baseUrl } from "../Urls"
 
 export const useLogin = () => {
   const {dispatch} = useAuthContext()
@@ -11,7 +12,7 @@ export const useLogin = () => {
     setIsLoading(true);
     setError(null);
       const formdata = {email, password}
-    const  response = await fetch('http://localhost:3002/api/user/login',{
+    const  response = await fetch(`${baseUrl}/api/user/login`,{
       method: 'POST',
       headers:{
               Accept: 'application/form-data',

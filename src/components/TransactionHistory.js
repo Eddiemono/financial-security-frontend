@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import { useAuthContext } from '../hooks/useAuthContext'
 import { useTransactionContext } from '../hooks/useTransactionsContext'
-
 import UserTransaction from './UserTransaction'
+import { baseUrl } from '../Urls'
 
 
 
@@ -16,7 +16,7 @@ const TransactionHistory = () => {
     if(!user){
         return
       }
-      const response =  await fetch(`http://localhost:3002/api/transaction/transactions`,{
+      const response =  await fetch(`${baseUrl}/api/transaction/transactions`,{
         headers:{
           'Authorization': `Bearer ${await user.token}`
           }

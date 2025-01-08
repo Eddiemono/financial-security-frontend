@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { useAuthContext } from '../hooks/useAuthContext'
 import { useTransactionContext } from '../hooks/useTransactionsContext'
-
 import '../css/Deposit.css'
+import { baseUrl } from '../Urls'
 
 
 const Withdrawal = () => {
@@ -21,7 +21,7 @@ const [error, setError] = useState(null)
       setError('You must be logged in')
     }
     const tran = {accountNo, amount}
-    const response = await fetch(`http://localhost:3002/api/transaction/withdraw`,{
+    const response = await fetch(`${baseUrl}/api/transaction/withdraw`,{
       method: "POST",
       headers:{
         Accept: "application/form-data",

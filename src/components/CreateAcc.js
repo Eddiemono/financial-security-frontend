@@ -3,6 +3,7 @@ import { useAuthContext } from "../hooks/useAuthContext"
 
 import '../css/Create-Acc.css'
 import { useNavigate } from "react-router-dom"
+import { baseUrl } from "../Urls"
 
 const CreateAcc = () => {
 
@@ -31,7 +32,7 @@ const CreateAcc = () => {
         
         let responseData;
     
-          await fetch(`http://localhost:3002/api/admin/create-acc/`, {
+          await fetch(`${baseUrl}/api/admin/create-acc/`, {
             method: 'POST',
             headers:{
               accept: 'application/form-data',

@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react'
 import { useAuthContext } from '../hooks/useAuthContext'
 import { useTransactionContext } from '../hooks/useTransactionsContext'
+import { baseUrl } from '../Urls'
 
 const AdminGetAccounts = () => {
   const {user} = useAuthContext()
@@ -12,7 +13,7 @@ const AdminGetAccounts = () => {
       if(!user){
         return
       }
-      const response = await fetch('http://localhost:3002/api/admin/get-acc',{
+      const response = await fetch(`${baseUrl}/api/admin/get-acc`,{
         headers:{
           "Authorization": `bearer ${await user.token}`
         }

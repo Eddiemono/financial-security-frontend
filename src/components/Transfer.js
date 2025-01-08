@@ -3,6 +3,7 @@ import { useAuthContext } from "../hooks/useAuthContext"
 import { useTransactionContext } from "../hooks/useTransactionsContext"
 
 import '../css/Deposit.css'
+import { baseUrl } from "../Urls"
 
 
 const Transfer = () => {
@@ -19,7 +20,7 @@ const Transfer = () => {
       setError('You must be logged in')
     }
     const tran = {amount, accountNo}
-    const response = await fetch(`http://localhost:3002/api/transaction/transfer`,{
+    const response = await fetch(`${baseUrl}/api/transaction/transfer`,{
       method: "POST",
       headers:{
         Accept: "application/form-data",

@@ -2,7 +2,9 @@ import React, { useEffect } from 'react'
 import { useAuthContext } from '../hooks/useAuthContext'
 import { useTransactionContext } from '../hooks/useTransactionsContext'
 
+
 import '../css/AdminTrans.css'
+import { baseUrl } from '../Urls'
 
 
 const AdminGetAllTrans = () => {
@@ -15,7 +17,7 @@ const AdminGetAllTrans = () => {
       if(!user){
         return
       }
-      const response = await fetch('http://localhost:3002/api/admin/get-trans', {
+      const response = await fetch(`${baseUrl}/api/admin/get-trans`, {
         headers:{
           "Authorization": `Bearer ${await user.token}`
         },

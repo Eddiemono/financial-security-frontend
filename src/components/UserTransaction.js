@@ -2,6 +2,7 @@ import React from 'react'
 import { useTransactionContext } from '../hooks/useTransactionsContext'
 import { useAuthContext } from '../hooks/useAuthContext'
 import '../css/userTrans.css'
+import { baseUrl } from '../Urls'
 
 const UserTransaction = ({transaction}) => {
 
@@ -14,7 +15,7 @@ const UserTransaction = ({transaction}) => {
         return
       }
 
-      const response = await fetch(`http://localhost:3002/api/transaction/${transaction._id}`,{
+      const response = await fetch(`${baseUrl}/api/transaction/${transaction._id}`,{
         method: "DELETE",
         headers:{
           "Authorization": `Bearer ${await user.token}`

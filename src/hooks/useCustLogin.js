@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useAuthContext } from './useAuthContext'
+import { baseUrl } from '../Urls'
 
 const useCustLogin = () => {
   const {dispatch} = useAuthContext()
@@ -10,7 +11,7 @@ const useCustLogin = () => {
     setError(null)
     setLoading(true)
     const formdata = {holderName, accountNo}
-    const response = await fetch(`http://localhost:3002/api/user/customer-log`,{
+    const response = await fetch(`${baseUrl}/api/user/customer-log`,{
       method: "POST",
       headers:{
         Accept: "application/form-data",

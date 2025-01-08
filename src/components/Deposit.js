@@ -3,6 +3,7 @@ import { useTransactionContext } from "../hooks/useTransactionsContext"
 import { useAuthContext } from "../hooks/useAuthContext"
 
 import '../css/Deposit.css'
+import { baseUrl } from "../Urls"
 
 const Deposit = () => {
 
@@ -22,7 +23,7 @@ const Deposit = () => {
 
     const tran = {accountNo, amount}
     
-    const response = await fetch('http://localhost:3002/api/transaction/deposit', {
+    const response = await fetch(`${baseUrl}/api/transaction/deposit`, {
       method: 'POST',
       headers:{
               'Content-Type': 'application/json',
