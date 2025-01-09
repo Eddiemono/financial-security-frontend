@@ -29,7 +29,11 @@ const Navbar = () => {
     <div className='container'>
 
     <div>
-      <Link to='/'><h1>Rainbows Financial Security</h1></Link>
+    <div className='mobile-top-header'>
+    <Link to='/'><h1>Rainbows Financial Security</h1></Link>
+    </div>
+      
+      
       
       <div className='mobile-container'>
       
@@ -42,7 +46,7 @@ const Navbar = () => {
       
       </div>
 
-      {user?<h3>{user.user.email || user.user.holderName}</h3>:<h3>Better Banking that profits you</h3>}
+      {user?<h3>Welcome! {user.user.email || user.user.holderName}</h3>:<h3>Better Banking that profits you</h3>}
       </div>
       </div>
 

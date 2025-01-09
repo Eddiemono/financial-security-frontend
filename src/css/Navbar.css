@@ -78,13 +78,18 @@ header .nav-btn{
   display: none;
 }
 
+.mobile-top-header{
+  display: flex;
+  justify-content: space-between;
+}
+
 @media(max-width: 1200px){
   header{
-    background: hsl(0, 16%, 96%);
+    background: #f1f1f1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2px;
+    padding: 0;
     height: 100px;
     color: black;
   }
@@ -101,6 +106,10 @@ header .nav-btn{
 
   .container h1{
     font-size: 18px;
+  }
+
+  .container h3{
+    font-size: 12px;
   }
   
   header a{
@@ -121,7 +130,7 @@ header .nav-btn{
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 1.5rem;
   transition: 1s;
@@ -175,6 +184,13 @@ header .nav-btn{
   }
 
   .mobile-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-top-header{
     display: flex;
   }
 }
