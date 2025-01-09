@@ -66,7 +66,15 @@ header .nav-btn{
   
 }
 
-.mobile-container{
+header .mobile-container{
+  display: none;
+}
+
+header .mid-container{
+  display: none;
+}
+
+header .mobile-display{
   display: none;
 }
 
@@ -164,5 +172,9 @@ header .nav-btn{
   font-weight: 600;
   font-size: 16px;
   color: rgb(137, 30, 30);
+  }
+
+  header .mobile-display{
+    display: block;
   }
 }

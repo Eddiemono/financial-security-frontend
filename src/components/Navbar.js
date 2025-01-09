@@ -32,17 +32,11 @@ const Navbar = () => {
       <Link to='/'><h1>Rainbows Financial Security</h1></Link>
       
       <div className='mobile-container'>
-      {/* {user && (<div>
-        <h3>{user.user.email || user.user.holderName}</h3>
-      </div>)} */}
+      
       <div className='mid-container'>
         <Link to={'/'}>Home</Link>
         <Link to={'/'}>About</Link>
         <Link to={'/'}>Contact</Link>
-
-        {/* {user && (<div>
-        <button onClick={handleLogout}>LOGOUT</button>
-        </div>)} */}
 
         {user?<Link to='/dashboard'>Dashboard</Link>:<Link to='/login-signup'>Login</Link>}
       
@@ -55,9 +49,11 @@ const Navbar = () => {
         {/* I add showNavbar function on the nav items div below so that when I click on a link the dropdown goes away */}
       <div className='nav-items' onClick={showNavbar}>
         <nav ref={navRef}>
-        
+        <div className='mobile-display'>
         <h2>Rainbows Finacial Security</h2>
         <h3>Better Banking That Rewards You</h3>
+        </div>
+        
 
       {user && (<div>
         <Link to='/dashboard'>Dashboard</Link> 
