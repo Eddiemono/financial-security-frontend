@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import '../css/ExchangeRate.css'
 
 const url = 'https://currency-conversion-and-exchange-rates.p.rapidapi.com/latest?from=USD&to=EUR%2CGBP';
 const options = {
@@ -28,7 +29,7 @@ const ExchangeRate = () => {
     exchange()
   },[])
   return (
-    <div>
+    <div className='exchange'>
       <h2>Currency Exchange Rates</h2>
       
       <div>
@@ -51,7 +52,7 @@ const ExchangeRate = () => {
             
           )
         })}
-        {/* {Object.keys(rates)} */}
+        
       </div>
     </div>
   )
