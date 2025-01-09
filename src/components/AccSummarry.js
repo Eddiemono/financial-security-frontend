@@ -3,6 +3,7 @@ import { useAuthContext } from '../hooks/useAuthContext'
 
 import '../css/Summary.css'
 import { Link } from 'react-router-dom'
+import ExchangeRate from './ExchangeRate'
 
 const AccSummarry = () => {
   const {user} = useAuthContext()
@@ -33,7 +34,7 @@ const AccSummarry = () => {
     <Link to={'/dashboard'}>Back to Dashboard</Link>
     </div>
     <div className='rightSide'>
-      <p>Hello</p>
+      <ExchangeRate />
     </div>
     </div>
     </div>

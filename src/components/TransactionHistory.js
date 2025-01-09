@@ -40,7 +40,7 @@ const TransactionHistory = () => {
       <div>
       {
         transactions && transactions.map((transaction) => (
-                <UserTransaction key={transaction._id} transaction={transaction}/>
+                <UserTransaction key={transaction._id} transaction={transaction}/> 
               ))
               }
             

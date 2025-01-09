@@ -14,6 +14,7 @@ import CreateAcc from "./components/CreateAcc";
 import AdminDashboard from "./components/AdminDashboard";
 import AdminGetAllTrans from "./components/AdminGetAllTrans";
 import AdminGetAccounts from "./components/AdminGetAccounts";
+import ExchangeRate from "./components/ExchangeRate";
 
 function App() {
   const {user} = useAuthContext()
@@ -23,7 +24,8 @@ function App() {
     <Route index element={<Home />}/>
     <Route path='/dashboard' element={user?<Dashboard/>:<LoginSignup/>}/>
     <Route path='/admin' element={user?<AdminDashboard/>:<LoginSignup/>}/>
-    <Route path='/create-acc' element={<CreateAcc />}/>:
+    <Route path='/create-acc' element={<CreateAcc />}/>
+    <Route path='/exchange' element={<ExchangeRate />}/>
     
     
     
