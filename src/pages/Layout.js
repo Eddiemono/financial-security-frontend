@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom'
 import Footer from '../components/Footer'
 
 import '../css/Layout.css'
+import ExchangeRate from '../components/ExchangeRate'
 
 const Layout = () => {
   return (
