@@ -3,6 +3,7 @@ import datas from '../components/Slide'
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs'
 
 import '../css/Home.css'
+import ExchangeRate from '../components/ExchangeRate'
 
 const Home = () => {
   console.log(datas);
@@ -32,6 +33,7 @@ const Home = () => {
           })}
         </span>
       </div>
+      <ExchangeRate />
     </div>
   )
 }
