@@ -37,6 +37,7 @@ const AdminGetAllTrans = () => {
   
   return (
     <div className='transactions'>
+    <h2>Transactions</h2>
       {transactions && transactions.map(trans => {
         return(
           <div className='transaction_items'>
