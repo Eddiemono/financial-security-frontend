@@ -66,15 +66,15 @@ header .nav-btn{
   
 }
 
-header .mobile-container{
+.mobile-container{
   display: none;
 }
 
-header .mid-container{
+.mid-container{
   display: none;
 }
 
-header .mobile-display{
+.mobile-display{
   display: none;
 }
 
@@ -174,7 +174,7 @@ header .mobile-display{
   color: rgb(137, 30, 30);
   }
 
-  header .mobile-display{
-    display: block;
+  .mobile-display{
+    display: flex;
   }
 }
