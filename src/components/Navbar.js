@@ -55,6 +55,9 @@ const Navbar = () => {
         {/* I add showNavbar function on the nav items div below so that when I click on a link the dropdown goes away */}
       <div className='nav-items' onClick={showNavbar}>
         <nav ref={navRef}>
+        
+        <h2>Rainbows Finacial Security</h2>
+        <h3>Better Banking That Rewards You</h3>
 
       {user && (<div>
         <Link to='/dashboard'>Dashboard</Link> 
