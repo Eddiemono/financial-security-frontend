@@ -1,4 +1,4 @@
-
+//Before adding to git visit backend .env and package.json file and frontend/client Urls.js to update files/contents
 import { Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
@@ -26,9 +26,6 @@ function App() {
     <Route path='/admin' element={user?<AdminDashboard/>:<LoginSignup/>}/>
     <Route path='/create-acc' element={<CreateAcc />}/>
     <Route path='/exchange' element={<ExchangeRate />}/>
-    
-    
-    
     <Route path='/login-signup' element={user?<></>:<LoginSignup/>}/>
     <Route path='/summary' element={user?<AccSummarry />:<LoginSignup/>}/>
     <Route path='/history' element={user?<TransactionHistory />:<LoginSignup/>}/>

@@ -29,21 +29,23 @@ const ExchangeRate = () => {
   },[])
   return (
     <div>
-      <h2>Currency Exchange</h2>
+      <h2>Currency Exchange Rates</h2>
+      
       <div>
         {rates && rates.map((rate, id) => {
           return(
             <div key={id}>
-            <div>{rate.date}</div>
-            <div>1 {rate.base}</div>
-            <div>AED = {rate.rates.AED}</div>
+            <div><b>Date: {rate.date}</b></div>
+            <b>Euro(€) as a base currency</b>
+            <div><b>1 {rate.base}</b></div>
             <div>USD = {rate.rates.USD}</div>
             <div>CAD = {rate.rates.CAD}</div>
             <div>GBP = {rate.rates.GBP}</div>
+            <div>AED = {rate.rates.AED}</div>
             <div>KES = {rate.rates.KES}</div>
-            <div>NGN = {rate.rates.NGN}</div>
             <div>XAF = {rate.rates.XAF}</div>
             <div>XOF = {rate.rates.XOF}</div>
+            <div>NGN = {rate.rates.NGN}</div>
             <div>BTC = {rate.rates.BTC}</div>
             </div>
             
