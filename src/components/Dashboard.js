@@ -34,12 +34,7 @@ const Dashboard = () => {
         </h2>
       </div>
             
-      {/* <div className="dasboardNavs" onClick={() => navigate('/history')> window.scrollTo(0,0)}>
-        <h2>
-          Account History
-        </h2>
-      </div> */}
-      <div className="dasboardNavs" onClick={() => navigate('/#')> window.scrollTo(0,0)}>
+      <div className="dasboardNavs" onClick={() => navigate('/history')> window.scrollTo(0,0)}>
         <h2>
           Account History
         </h2>

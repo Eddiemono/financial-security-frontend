@@ -45,6 +45,7 @@ const AdminGetAllTrans = () => {
           <h2>Account No: {trans.accountNo}</h2></div>
           <h4>Trans Amount: {trans.amount}</h4>
           <h4>Trans Date: {trans.date}</h4>
+          <h4>Trans Date: {trans.transType}</h4>
           <h4>Trans Time: {trans.time}</h4>          
           
           </div>

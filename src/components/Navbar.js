@@ -42,7 +42,13 @@ const Navbar = () => {
         <Link to={'/'}>About</Link>
         <Link to={'/'}>Contact</Link>
 
-        {user?<Link to='/dashboard'>Dashboard</Link>:<Link to='/login-signup'>Login</Link>}
+        {/* {user?<Link to='/dashboard'>Dashboard</Link>:<Link to='/login-signup'>Login</Link>} */}
+        {localStorage.getItem('user')?<Link to='/admin'>Admin Dasboard</Link>
+      :<></>
+      }
+        {localStorage.getItem('customer')?<Link to='/dashboard'>Dashboard</Link>
+      :<></>
+      }
       
       </div>
 
@@ -59,9 +65,14 @@ const Navbar = () => {
         </div>
         
 
-      {user && (<div>
+      {/* {user && (<div>
         <Link to='/dashboard'>Dashboard</Link> 
-      </div>)}
+      </div>)} */}
+
+      
+      {localStorage.getItem('customer')?<Link to='/dashboard'>Dasboard</Link>
+      :<></>
+      }
 
       {localStorage.getItem('user')?<Link to='/admin'>Admin Dasboard</Link>
       :<></>

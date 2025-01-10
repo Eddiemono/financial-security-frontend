@@ -12,6 +12,7 @@ const Transfer = () => {
 
   const [accountNo, setAccountNo] = useState('')
   const [amount, setAmount] = useState('')
+  const [perior, setPerior] = useState('')
   const [error, setError] = useState(null)
 
   const handleClick = async(e) => {
@@ -19,7 +20,7 @@ const Transfer = () => {
     if(!user){
       setError('You must be logged in')
     }
-    const tran = {amount, accountNo}
+    const tran = {amount, accountNo, perior}
     const response = await fetch(`${baseUrl}/api/transaction/transfer`,{
       method: "POST",
       headers:{
@@ -46,8 +47,12 @@ const Transfer = () => {
     <div className="deposit">
       <h2>Transfer Funds</h2>
       <div className="deposit_container">
-        <label>Account No:
-          <input type="text" value={accountNo} placeholder="Account No" onChange={(e) => setAccountNo(e.target.value)}/>
+      <label>From Account No:
+          <input type="text" value={perior} placeholder="Your Account No" onChange={(e) => setPerior(e.target.value)}/>
+        </label>
+
+        <label>To Account No:
+          <input type="text" value={accountNo} placeholder="To Account No" onChange={(e) => setAccountNo(e.target.value)}/>
         </label>
 
         <label>Amount:

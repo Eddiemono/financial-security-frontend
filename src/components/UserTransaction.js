@@ -35,7 +35,8 @@ const UserTransaction = ({transaction}) => {
         <th>Date</th>    
         <th>Time</th>       
         <th>Amount</th>
-        <th>Account No</th>
+        <th>From Acc</th>
+        <th>To Account</th>
         <th>Transaction</th>
         <th>Delete Record</th>
       </thead>
@@ -44,6 +45,7 @@ const UserTransaction = ({transaction}) => {
         <td>{transaction.date}</td>   
         <td>{transaction.time}</td>             
         <td>{transaction.amount}</td>
+        <td>{transaction.perior}</td>
         <td>{transaction.accountNo}</td>
         <td>{transaction.transType}</td>
         <td><button style={{background: "Red", color: "whitesmoke"}} onClick={handleClick}>Delete transaction</button></td>  
