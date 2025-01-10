@@ -42,13 +42,7 @@ const Navbar = () => {
         <Link to={'/'}>About</Link>
         <Link to={'/'}>Contact</Link>
 
-        {/* {user?<Link to='/dashboard'>Dashboard</Link>:<Link to='/login-signup'>Login</Link>} */}
-        {localStorage.getItem('user')?<Link to='/admin'>Admin Dasboard</Link>
-      :<></>
-      }
-        {localStorage.getItem('customer')?<Link to='/dashboard'>Dashboard</Link>
-      :<></>
-      }
+        {user?<Link to='/dashboard'>Dashboard</Link>:<Link to='/login-signup'>Login</Link>}
       
       </div>
 
