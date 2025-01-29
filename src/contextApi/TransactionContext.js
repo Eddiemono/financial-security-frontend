@@ -11,7 +11,7 @@ switch(action.type){
 
     case 'CREATE_TRANSACTIONS':
       return {
-        transactions: [action.payload, ...state.transactions ]
+        transactions: [action.payload, [...state.transactions] ]
       }
 
       case 'DELETE_TRANSACTIONS':

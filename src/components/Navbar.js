@@ -57,12 +57,6 @@ const Navbar = () => {
         <h2>Rainbows Finacial Security</h2>
         <h3>Better Banking That Rewards You</h3>
         </div>
-        
-
-      {/* {user && (<div>
-        <Link to='/dashboard'>Dashboard</Link> 
-      </div>)} */}
-
       
       {localStorage.getItem('customer')?<Link to='/dashboard'>Dasboard</Link>
       :<></>

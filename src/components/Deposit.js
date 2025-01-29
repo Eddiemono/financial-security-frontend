@@ -52,7 +52,8 @@ const Deposit = () => {
       <h2>Deposit Funds</h2>
       <div className="deposit_container">
       <form onSubmit={deposit}>
-        <label htmlFor="accountNo"> Account Number:
+      <h4>Acc No: {user.user.accountNo}</h4>
+        <label htmlFor="accountNo">Your Account Number:
           <input type="number" value={accountNo} onChange={(e) => setAccountNo(e.target.value)} /> 
         </label>
                 <br/>

@@ -28,7 +28,7 @@ const UserTransaction = ({transaction}) => {
       }
   }
   return (
-    <div style={{}}>
+    <div className='transactionn'>
     <div style={{textAlign: "center", marginTop: "20px"}}>
     <table style={{width: "100%"}}>
       <thead>

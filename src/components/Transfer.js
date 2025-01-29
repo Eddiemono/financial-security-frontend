@@ -56,7 +56,7 @@ const Transfer = () => {
         </label>
 
         <label>Amount:
-          <input type="text" value={amount} placeholder="Account No" onChange={(e) => setAmount(e.target.value)}/>
+          <input type="text" value={amount} placeholder="Amount" onChange={(e) => setAmount(e.target.value)}/>
         </label>
         <br/>
         <button onClick={handleClick}>Transfer</button>

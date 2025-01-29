@@ -35,7 +35,7 @@ const TransactionHistory = () => {
         },[dispatch, user])
           
       return (
-        <div style={{textAlign: "center"}}>
+        <div className='transa' style={{textAlign: "center"}}>
       <h2>Transaction History</h2>
       <div>
       {
